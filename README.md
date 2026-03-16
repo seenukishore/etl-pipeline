@@ -1,16 +1,16 @@
-# 🔄 ETL Pipeline Project
+# ETL Pipeline Project
 
-## 📌 About
+## About
 A Python-based ETL (Extract, Transform, Load) Pipeline that extracts raw sales data from MySQL, transforms it using Pandas, and loads it into a Data Warehouse.
 
-## 🛠️ Technologies Used
+## Technologies Used
 - Python 3
 - MySQL Connector
 - Pandas
 - SQLAlchemy
 - Cryptography (Fernet)
 
-## 📁 Project Structure
+## Project Structure
 | File | Description |
 |------|-------------|
 | `etl_runner.py` | Main ETL pipeline runner |
@@ -20,16 +20,16 @@ A Python-based ETL (Extract, Transform, Load) Pipeline that extracts raw sales d
 | `password_utils.py` | Encrypted password handler |
 | `.gitignore` | Hides secret.key from GitHub |
 
-## ⚙️ ETL Process
-- 📤 **Extract** → Raw data from `sales_db.raw_sales`
-- ⚙️ **Transform** → Remove duplicates, calculate `total_amount`, title case names
-- 📥 **Load** → Clean data into `sales_warehouse.fact_sales`
+## ETL Process
+- **Extract** → Raw data from `sales_db.raw_sales`
+- **Transform** → Remove duplicates, calculate `total_amount`, title case names
+- **Load** → Clean data into `sales_warehouse.fact_sales`
 
-## 🔒 Security
+## Security
 - `secret.key` is never uploaded to GitHub
 - Password is encrypted using Fernet encryption
 
-## ▶️ How to Run
+## How to Run
 1. Clone the repository
 2. Install dependencies:
 ```
